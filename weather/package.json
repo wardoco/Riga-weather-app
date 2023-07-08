@@ -1,0 +1,26 @@
+{
+  "name": "weather_wardoco",
+  "version": "1.0.0",
+  "description": "RCS MD. 2 JS App ",
+  "keywords": [
+    "JS",
+    "APP",
+    "RCS",
+    "HW"
+  ],
+  "author": {
+    "name": "Sergejs (Wardoco)",
+    "email": "wadoco@icloud.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4",
+    "sass": "^1",
+    "vite": "^4"
+  }
+}

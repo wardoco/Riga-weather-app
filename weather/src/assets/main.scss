@@ -1,0 +1,44 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url(images/bg.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#app-wardoco {
+  @import "parts/_base.scss";
+  @import "variables/colors";
+
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 213px;
+  border-radius: 5px;
+  border: 2.5px solid $white;
+  //box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+
+  & > header {
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid $white;
+    @import "parts/_header.scss";
+  }
+
+  & > footer {
+    border-radius: 0 0 5px 5px;
+    @import "parts/_footer.scss";
+  }
+
+  & > main {
+    padding: 20px 10px;
+    @import "parts/_main.scss";
+  }
+
+}

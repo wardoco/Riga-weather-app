@@ -1,0 +1,32 @@
+@import "../variables/colors";
+
+.row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 15px;
+  border-radius: 0 0 5px 5px;
+  color: $color-btn-text;
+  background-color: $color-pb-sp-bg;
+  padding: 20px 10px 10px;
+
+  & > div {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+
+    &.task,
+    &.author {
+      position: relative;
+
+      &:after {
+        content: '|';
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: -10px;
+        bottom: auto;
+      }
+    }
+  }
+}

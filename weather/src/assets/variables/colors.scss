@@ -1,0 +1,67 @@
+$white: #FFFFFF;
+$black: #000000;
+$dark-cyan-1: #008080;
+$dark-cyan-2: #007A7A;
+$light-cyan: #00BFBF;
+$light-gray: #E5E5E5;
+
+$color-bg: $white;
+$color-text: #333333;
+$color-h1: #007A7A;
+$color-h2: #00BFBF;
+
+$color-btn: $dark-cyan-1;
+$color-btn-hover: $light-cyan;
+$color-btn-active: $dark-cyan-2;
+$color-btn-disabled: $light-gray;
+$color-btn-text: $white;
+$color-btn-text-hover: $white;
+$color-btn-text-active: $white;
+$color-btn-text-disabled: #CCCCCC;
+
+$color-pb-sp-text: $light-cyan;
+$color-pb-sp-bg: #575757;
+$color-pb-sp-bg-active: $dark-cyan-1;
+$color-pb-sp-error: #8B0000;
+
+@mixin decosign-btn($type: main) {
+
+  @if ($type == orange) {
+    $color-btn: #FFD700;
+    $color-btn-hover: #FFA500;
+    $color-btn-active: #FF8C00;
+    $color-btn-disabled: #E5E5E5;
+    $color-btn-text: $black;
+    $color-btn-text-hover: $black;
+    $color-btn-text-active: $black;
+    $color-btn-text-disabled: #CCCCCC;
+  }
+
+  @if ($type == reset) {
+    $color-btn: #EFEFEF;
+    $color-btn-hover: #EFEFEF;
+    $color-btn-active: #EFEFEF;
+    $color-btn-disabled: #E5E5E5;
+    $color-btn-text: #666666;
+    $color-btn-text-hover: #666666;
+    $color-btn-text-active: #666666;
+    $color-btn-text-disabled: #CCCCCC;
+  }
+
+  color: $color-btn-text;
+  background-color: $color-btn;
+
+  &:hover {
+    color: $color-btn-text-hover;
+    background-color: $color-btn-hover;
+  }
+
+  &:active {
+    color: $color-btn-text-active;
+    background-color: $color-btn-active;
+  }
+  &:disabled {
+    color: $color-btn-text-disabled;
+    background-color: $color-btn-active;
+  }
+}
